@@ -1,0 +1,73 @@
+.headtitle {
+    color:black;
+    margin: 2vw 3vw ;
+    background-color: beige;
+    width: 4em;
+    height: .5em;
+}
+.headtitle a {
+    text-decoration: none;
+    color: black;
+}
+.headtitle a:hover {
+    color: grey;
+}
+#scipio {
+    width: 100%;
+    position: static;
+    margin: 1vw 2vw;
+}
+.nav li {
+    list-style-type: none;
+    padding: 0.5vw 0.5vw;
+}
+.nav a {
+    display: inline-block;
+    text-decoration: none;
+    color: black;  
+}
+.nav a:hover{
+    color: salmon;
+}
+.nav a:active{
+    color:white;
+    background-color: salmon;
+}
+
+h1 {
+    color:steelblue;
+}
+
+section {
+    padding: 0vw 20vw;
+}
+.reflect {
+    padding: 1vw;
+}
+.reflect li {
+    font-size: 1.4em;
+    list-style: none;
+}
+.reflect p {
+    background-color: bisque;
+    padding: 1vw 1vw;
+}
+.line {
+    padding: 1vw 1vw;
+}
+footer {
+    background-color: skyblue;
+    padding: 1vw;
+    text-align: center; 
+    color: white;
+    height: 100%;
+}
+
+#mail {
+    text-decoration: none;
+    color:white;
+}
+#mail:hover {
+    color: gray;
+
+}
