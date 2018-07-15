@@ -37,7 +37,12 @@
 h1 {
     color:steelblue;
 }
-
+.titleuda {
+    font-size: 2em;
+    font-weight: bold;
+    color: cornflowerblue;
+    margin: 3% 0% 3% 0%;
+}
 section {
     padding: 0vw 20vw;
 }
@@ -56,6 +61,7 @@ section {
     padding: 1vw 1vw;
 }
 footer {
+    clear:left;
     background-color: skyblue;
     padding: 1vw;
     text-align: center; 
@@ -63,6 +69,27 @@ footer {
     height: 100%;
 }
 
+.row {
+    display: inline;
+}
+
+.col {
+    float: left;
+    width: 30%;
+    margin: 1%;
+}
+
+.col1 {
+   background: salmon;
+}
+.udareply {
+    list-style-type: none;
+    background:yellow;
+    padding: 10% 2% 10% 2%;
+}
+.col3 .boxmodel {
+    width: 100%;
+}
 #mail {
     text-decoration: none;
     color:white;
