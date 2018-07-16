@@ -70,13 +70,13 @@ footer {
 }
 
 .row {
-    display: inline;
+    display: block;
 }
 .col-md-4 {
     float: left;
     padding: 1vw;
     margin :2vw;
-    width: 25%;
+    max-width: 100%;
     overflow: auto;
     background: yellow;
 }
@@ -87,9 +87,9 @@ footer {
     margin: 2%;
 }
 .col {
-    float: left;
-    width: 30%;
+    /*float: left;*/
     margin: 1%;
+    max-width: 100%; 
 }
 
 .col1 {
@@ -110,4 +110,25 @@ footer {
 #mail:hover {
     color: gray;
 
+}
+
+@media screen and (min-width: 700px) {
+    .row {
+        display:inline-block;
+    }
+    .col {
+        float:left;
+    }
+    .col1 {
+        width: 30.33%;
+    }
+    .col2 {
+        width: 30.33%;
+    }
+    .col3 {
+        width: 30.33%;
+    }
+    .col-md-4 {
+        width:25%;
+    }
 }
