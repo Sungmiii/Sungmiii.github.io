@@ -1,0 +1,29 @@
+
+/* =======
+navigation style
+========
+*/
+
+.navcontainer {
+    background: linear-gradient(to bottom, #a1d3b0, #f6f1d3);
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+.navigation {
+    margin: 50px 30px 0 50px;
+    
+}
+.logo {
+    margin: 30px 5px;
+}
+.navigation li {
+    list-style-type: none;
+    color: white;
+}
+
