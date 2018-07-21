@@ -3,7 +3,7 @@ body all style
 =====
 */
 
-body {
+body,footer {
     font: 300 16px/22px "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 /* =======
@@ -29,6 +29,22 @@ navigation style
     margin: 30px 5px;
 }
 
+#Logo {
+	position: absolute;
+	display: inline;
+	height: 40px;
+	fill: black;
+     margin: 10px auto 10px; 
+     left: 0;
+    right: 0;
+    top: 0;
+	transition: all 0.5s;
+}
+
+#Logo:hover {
+	fill: skyblue;
+}
+ 
 .navigation li, a, .dropdown-btn {
     text-decoration: none;
     font-size: 20px;
@@ -43,17 +59,27 @@ navigation style
     list-style-type: none;
 }
 .dropdown-btn {
-    box-sizing: border-box;
     font-weight: 350;
     padding: 0 0;
     margin-top: 0;
     margin-bottom: 3px;
     text-transform: inherit;
 }
+.dropdown-list {
+    padding: 0;
+    margin: 0;
+}
+.dropdown-container .dropdown-list li a {
+    width: 150px;  
+    font-size: .8em;
+}
 
 /* on mouse-over */
 .navigation a:hover, .dropdown-btn:hover {
     color: skyblue;
+}
+button:focus {
+    color: white;
 }
 .active {
     background-color: none;
@@ -61,8 +87,7 @@ navigation style
 }
 .dropdown-container {
     display: none;
-    background-color: #a1d3b0;
-    padding-left: 8px;
+    background-color: none;
 }
 .fa-caret-down {
     float: right;
@@ -81,8 +106,35 @@ lead
 main content
 =====
 */
-.main {
-    box-sizing: border-box;
-    border: 1px solid red !important;
-    margin: 30px 25px 0 225px;
+
+main h1 {
+    text-align: right;
+    font-weight: 500;
+}
+.maincontatiner {
+    margin: 100px 0 0 300px;
+}
+.maincontatiner p {
+    padding: 10px;
+}
+#mydog {
+    width: 75%;
+}
+
+
+
+/*
+=====
+footer
+=====
+*/
+ 
+footer {
+    clear: both;
+    margin-left: 300px;
+    height: 150px;
+}
+
+footer p {
+    margin-top: 100px;
 }

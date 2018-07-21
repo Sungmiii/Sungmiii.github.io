@@ -8,6 +8,7 @@
         <link rel="stylesheet" text="type/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.css">
         <link rel="stylesheet" text="type/css" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css">
         <link rel="stylesheet" text="type/css" href="style/main.css">
+        <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
     </head>
     <body>
 
@@ -21,29 +22,45 @@
                    <i class="fa fa-caret-down"></i>
                </button>
                  <div class="dropdown-container">
-                     <a href="#">Cultural Blogs</a>
-                     <a href="#">Technical Blogs</a>
+                     <ul class="dropdown-list">
+                      <li><a href="#">Cultural Blogs</a></li>
+                      <li><a href="#">Technical Blogs</a></li>
+                    </ul>
                  </div>
                <li><a href="#">Project</a></li>
-               <li><a href="#">About Me</a></li>
+               <li><a href="#">Contact</a></li>
            </ul>
        </nav>
        </section>
        <!-- Main content-->
-       <section class="main">
+       <section class="maincontatiner">
            <main>
-               <div>
-                   <h1>Hi Im Sungmi</h1>
-               </div>
+            
+             <div class="row">
+                <div class="five columns">
+                    <h1>Hi Im Sungmi</h1>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing 
+                        elit. Quia possimus voluptatibus modi sed quisquam consequuntur earum. 
+                        Nemo rem reprehenderit, perspiciatis natus facere, cupiditate repellendus 
+                        voluptate aliquid minima quidem ducimus nesciunt.
+                    </p>
+                    <p>
+                       Lorem ipsum dolor sit amet consectetur adipisicing 
+                       elit. Quia possimus voluptatibus modi sed quisquam consequuntur earum. 
+                       Nemo rem reprehenderit, perspiciatis natus facere, cupiditate repellendus 
+                       voluptate aliquid minima quidem ducimus nesciunt.
+                     </p>
+                </div>
+                <div class="seven columns"><img id ="mydog" src="img/sci25.jpg" alt="brwon and white color chihuahua crossed dog"></div>
+             </div>
            </main>
 
        </section>
-
        <!-- Footer -->
        <footer>
-
+           <p>&copy;Sungmi Kim 2018</p>
        </footer>
-
 
        <script>
         var dropdown = document.getElementsByClassName("dropdown-btn");
