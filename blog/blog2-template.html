@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+    <head>
+            <title>Sungmi Kim</title>
+            <meta charset="UTF-8">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+            <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato:100,300,400">
+            <link rel="stylesheet" text="type/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.css">
+            <link rel="stylesheet" text="type/css" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css">
+            <link rel="stylesheet" text="type/css" href="../style/main.css">
+            <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon" />
+    </head>
+    <body>
+         <!--Navigation bar-->
+       <section class="navcontainer">
+            <nav class="navigation">
+                <ul>
+                    <li class="logo"><a href="../index.html"><img src="../img/logo.png" alt="sungmi logo"></a></li>
+                    <li><a href="#">About Me</a></li>
+                    <button class="dropdown-btn">Blog
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                      <div class="dropdown-container">
+                          <ul class="dropdown-list">
+                           <li><a href="./blog-template.html">Cultural Blogs</a></li>
+                           <li><a href="./blog2-template.html">Technical Blogs</a></li>
+                         </ul>
+                      </div>
+                    <li><a href="#">Project</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            </section>
+            <!-- Main content-->
+            <section class="maincontatiner">
+              <main id="top">
+                <a class="button" href="#t2htmlp1">T2-HTML-CSS-DOM-P1</a>
+                <a class="button button-primary" href="#t2htmlp2">T2-HTML-CSS-DOM-P2</a>
+                <hr>
+                <section class="textarea">
+                    <div id="t2htmlp1">
+                        <h1 class="blogpicktitle">T2-HTML-CSS-DOM-P1</h1>
+                        <h3>Can you think of an analogy to describe HTML, 
+                            CSS and the DOM? How would you describe it to your non-technical friend?</h3>
+                        <p>
+                            html is the language of the web and it's called a 'tag',basically
+                            I can say it's basement for building the website.
+                        </p>
+                        <p>
+                            DOM is show html language on the browser webpage to us, so it's 
+                        </p>
+                        <p>
+                            CSS is stlying on html tag, so you have the basement of the webpage and
+                            you put it on some makeup to show users.
+                        </p>
+                    </div>
+                    <div>
+                        <h3>What is meant by boxifying design?</h3>
+                        <p>
+                            Webpage is built up with lots of boxes, we only can see image,
+                            color and text but actually these contents are surrouned by each
+                            boxes.The Webdevlopers are drawing boxes on the paper first, where
+                            is head and where is body and where is footer then they are doing
+                            html,css and JavaScript.
+                        </p>
+                    </div>
+                    <div>
+                        <h3>What is the box model?</h3>
+                        <img src="../img/boxing-model.png" alt="boxingmodel" class="boxmodel">
+                        <p>
+                            The box model is the important to understand html,
+                            when we write down tag 'p' it's in a box. So P is tag 
+                            and has a content with that and content is surrouned by padding
+                            and padding is also surrouned by border and lastly they are all surrouned
+                            by margin. The padding is the inside of the box and the margin is the outside
+                            of the box.
+                        </p>
+                    </div>
+            
+                     <div id="t2htmlp2">
+                        <h1 class="blogpicktitle">T2-HTML-CSS-DOM-P2</h1>
+                        <h3>What is grid based design?</h3>
+                        <p>
+                            Web page is based on 12 grid then we can divide
+                             2,3 and 4 column evenly and looks tidy
+                        </p>
+                    </div>
+                    <div>
+                        <h3>Whats all the hype about responsive webpages?</h3>
+                        <p>
+                            Resposive webpage is that the webpage is fit on each device 
+                            screen size automatically.
+                        </p>
+                    </div>
+                    <div>
+                        <h3>What is semantic structure?</h3>
+                        <p>
+                            The semantic structure is the tags are needing to locate at the 
+                            correct place in html, for example the body tag is inside 
+                            of the html tag and the div tag is inside of the body tag. 
+                        </p>
+                    </div>
+                    <div>
+                        <h3>Any other points you found interesting and want to reflect on</h3>
+                        <p>
+                            Bootstrap is very interesting, I am not sure how can I read all their information.
+                        </p>
+                    </div>
+                    <div><a class="bottomnav" href="#top">Top</a></div>
+                
+
+                </section>
+
+
+
+              </main>
+            </section>
+     <!-- Footer -->
+     <footer>
+            <p>&copy;Sungmi Kim 2018</p>
+        </footer>
+ 
+        <script>
+         var dropdown = document.getElementsByClassName("dropdown-btn");
+         var i;
+ 
+         for (i = 0; i < dropdown.length; i++) {
+             dropdown[i].addEventListener("click", function() {
+                 this.classList.toggle("active");
+                 var dropdownContent = this.nextElementSibling;
+                 if (dropdownContent.style.display === "block") {
+                     dropdownContent.style.display = "none";
+                 } else {
+                   dropdownContent.style.display = "block";
+                 }
+                });
+            }
+        </script>
+    </body>
+</html>
