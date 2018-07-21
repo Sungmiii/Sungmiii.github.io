@@ -3,6 +3,8 @@
     <head>
         <title>Sungmi Kim</title>
         <meta charset="UTF-8">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato:100,300,400">
         <link rel="stylesheet" text="type/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.css">
         <link rel="stylesheet" text="type/css" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css">
         <link rel="stylesheet" text="type/css" href="style/main.css">
@@ -14,15 +16,26 @@
        <nav class="navigation">
            <ul>
                <li class="logo"><a href="index.html"><img src="img/logo.png" alt="sungmi logo"></a></li>
-               <li>About Me</li>
-               <li>Blog</li>
-               <li>Project</li>
-               <li>About Me</li>
+               <li><a href="#">About Me</a></li>
+               <button class="dropdown-btn">Blog
+                   <i class="fa fa-caret-down"></i>
+               </button>
+                 <div class="dropdown-container">
+                     <a href="#">Cultural Blogs</a>
+                     <a href="#">Technical Blogs</a>
+                 </div>
+               <li><a href="#">Project</a></li>
+               <li><a href="#">About Me</a></li>
            </ul>
        </nav>
        </section>
        <!-- Main content-->
-       <section>
+       <section class="main">
+           <main>
+               <div>
+                   <h1>Hi Im Sungmi</h1>
+               </div>
+           </main>
 
        </section>
 
@@ -30,5 +43,23 @@
        <footer>
 
        </footer>
+
+
+       <script>
+        var dropdown = document.getElementsByClassName("dropdown-btn");
+        var i;
+
+        for (i = 0; i < dropdown.length; i++) {
+            dropdown[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var dropdownContent = this.nextElementSibling;
+                if (dropdownContent.style.display === "block") {
+                    dropdownContent.style.display = "none";
+                } else {
+                  dropdownContent.style.display = "block";
+                }
+               });
+           }
+       </script>
     </body>
 </html>
