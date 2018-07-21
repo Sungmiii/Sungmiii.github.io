@@ -28,22 +28,6 @@ navigation style
 .logo {
     margin: 30px 5px;
 }
-
-#Logo {
-	position: absolute;
-	display: inline;
-	height: 40px;
-	fill: black;
-     margin: 10px auto 10px; 
-     left: 0;
-    right: 0;
-    top: 0;
-	transition: all 0.5s;
-}
-
-#Logo:hover {
-	fill: skyblue;
-}
  
 .navigation li, a, .dropdown-btn {
     text-decoration: none;
@@ -112,7 +96,7 @@ main h1 {
     font-weight: 500;
 }
 .maincontatiner {
-    margin: 100px 0 0 300px;
+    margin: 100px 100px 0 300px;
 }
 .maincontatiner p {
     padding: 10px;
@@ -120,7 +104,6 @@ main h1 {
 #mydog {
     width: 75%;
 }
-
 
 
 /*
@@ -137,4 +120,30 @@ footer {
 
 footer p {
     margin-top: 100px;
+}
+
+/* 
+======
+blog template
+=====
+*/
+.blogpicktitle {
+    text-align: left;
+}
+
+.button {
+    text-transform: inherit;
+    width:200px;
+}
+
+.textarea {
+    max-width: 750px;
+}
+
+.boxmodel {
+    max-width: 400px;
+}
+
+.bottomnav {
+    color: black;
 }
