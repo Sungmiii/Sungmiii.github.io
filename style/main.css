@@ -157,7 +157,7 @@ resposive
 ====
 */
 
-@media only screen and (max-width:400px) {
+@media only screen and (max-width:350px) {
     .navcontainer {
         background: linear-gradient(to bottom, #a1d3b0, #f6f1d3);
         height: auto;
