@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Reflection</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/main.css" type="text/css">
+</head>
+<body>
+    <header><!DOCTYPE html>
+        <html>
+            <head>
+                    <title>Sungmi Kim</title>
+                    <meta charset="UTF-8">
+                    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+                    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato:100,300,400">
+                    <link rel="stylesheet" text="type/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.css">
+                    <link rel="stylesheet" text="type/css" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css">
+                    <link rel="stylesheet" text="type/css" href="../style/main.css">
+                    <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon" />
+            </head>
+            <body>
+                 <!--Navigation bar-->
+               <section class="navcontainer">
+                    <nav class="navigation">
+                        <ul>
+                            <li class="logo"><a href="../index.html"><img src="../images/logo.png" alt="sungmi logo" id="mylogo"></a></li>
+                            <li><a href="#">About Me</a></li>
+                            <button class="dropdown-btn">Blog
+                                <i class="fa fa-caret-down"></i>
+                            </button>
+                              <div class="dropdown-container">
+                                  <ul class="dropdown-list">
+                                   <li><a href="./blog-template.html">Cultural Blogs</a></li>
+                                   <li><a href="./blog2-template.html">Technical Blogs</a></li>
+                                 </ul>
+                              </div>
+                            <li><a href="#">Project</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </nav>
+                    </section>
+                    <!-- Main content-->
+                    <section class="maincontatiner">
+                      <main id="top">
+                        <a class="button" href="./c1-reflection-blog.html">C1-Reflection</a>
+                        <a class="button button-primary" href="./c1-time-and-habits-blog.html">C1-Time and Habit</a>
+                        <a class="button" href="./c2-emotional-intelligence.html">C2-Emotional Intelligence</a>
+                        <a class="button button-primary" href="./c3-meditation-process.html">C3-Meditation</a>
+                        <hr>
+                        <section class="textarea">
+                            <div id="c1timehabit">
+                                <h1 class="blogpicktitle">C1-MEDITATION PROCESS</h1>
+                                    <h3>What did you think about meditation before reading chapter 2?</h3>
+                                    <p>
+                                      I personally don't like the meditation, because I prefer to concentrate
+                                      on music rather than quiet and darkness. 
+                                    </p>
+                                </div>
+                                <div>
+                                    <h3>What new things have you learnt about meditation?</h3>
+                                    <p>
+                                       I did 2 type of yoga before, the first one was lots of activity and 
+                                       the second one was a real yoga with lots of meditation. I pretty liked
+                                       the first type because exercising is working for me to concentrate. Actually
+                                       I couldn't finish my second type yoga class becuase of the meditation part.
+                                       This chapter2 seems like the second type but not too deeply as what I've done the past.
+                                    </p>
+                                </div>
+                                <div>
+                                    <h3>Did any of the suggested meditation techniques stand out to you?</h3>
+                                    <p>
+                                        Warm place and jazz music and also little bit noise, they are perfect for me 
+    
+                                    </p>
+                                </div>
+                                <div>
+                                    <h3>Any other musings?</h3>
+                                    <p>
+                                       Loving yourself is great part to read actually, I am currently encouraging
+                                       myself while working on each sprint. It's pretty working and delighted.
+                                    </p>
+                                </div>
+                                <div>
+                                    <h3>How did the 'process over product' concept affect the way you tackled the site redesign and rebuild?</h3>
+                                    <p>
+                                        I love design and always want to show my design looks 
+                                        cool but when I build my site it was a tough job, 
+                                        because I could sketch and imagine how it’s looking 
+                                        like in my mind. However if I need to finish this as a product 
+                                        for showing people was a tough job, and it takes a time to 
+                                        show my site same as my sketch. So I couldn’t deeply 
+                                        think it looking cool not so much for rebuilding,
+                                        I really want to remake without error. 
+                                    </p>
+                                </div>
+                                <div><a class="bottomnav" href="#top">Top</a></div>
+                        
+        
+                        </section>
+        
+        
+        
+                      </main>
+                    </section>
+             <!-- Footer -->
+             <footer>
+                    <p>&copy;Sungmi Kim 2018</p>
+                </footer>
+
+                <!-- Js -->
+         
+                <script>
+                 var dropdown = document.getElementsByClassName("dropdown-btn");
+                 var i;
+         
+                 for (i = 0; i < dropdown.length; i++) {
+                     dropdown[i].addEventListener("click", function() {
+                         this.classList.toggle("active");
+                         var dropdownContent = this.nextElementSibling;
+                         if (dropdownContent.style.display === "block") {
+                             dropdownContent.style.display = "none";
+                         } else {
+                           dropdownContent.style.display = "block";
+                         }
+                        });
+                    }
+                </script>
+ </body>
+ </html>
+        
