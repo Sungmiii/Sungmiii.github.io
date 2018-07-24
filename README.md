@@ -14,7 +14,7 @@ what is different float and flex ...
 
 ### Sprint 3 
 
-Alright :smile: I got a solution why my site is not a responsive 
+Alright :smile: I got a solution why my site is not a responsive \
 via phone without the main page because I forgot to add meta code ....
 ```
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
