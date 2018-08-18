@@ -1,52 +1,51 @@
 <!DOCTYPE html>
 <html>
-    <head>
-            <title>Sungmi Kim</title>
-            <meta charset="UTF-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            
-            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-            <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato:100,300,400">
-            <link rel="stylesheet" text="type/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.css">
-            <link rel="stylesheet" text="type/css" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css">
-            <link rel="stylesheet" text="type/css" href="../style/main.css">
-            <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon" />
-    </head>
-    <body>
-         <!--Navigation bar-->
-       <section class="navcontainer">
-            <nav class="navigation">
-                <ul>
-                    <li class="logo"><a href="../index.html"><img src="../images/logo.png" alt="sungmi logo" id="mylogo"></a></li>
-                    <li><a href="#">About Me</a></li>
-                    <button class="dropdown-btn">Blog
-                        <i class="fa fa-caret-down"></i>
-                    </button>
-                      <div class="dropdown-container">
-                          <ul class="dropdown-list">
-                           <li><a href="./blog-template.html">Cultural Blogs</a></li>
-                           <li><a href="./blog2-template.html">Technical Blogs</a></li>
-                         </ul>
-                      </div>
-                    <li><a href="#">Project</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </nav>
-            </section>
-            <!-- Main content-->
-            <section class="maincontatiner">
-              <main id="top">
-                <a class="button" href="./t2-html-css-dom-p1.html">T2-HTML-CSS-DOM-P1</a>
-                <a class="button button-primary" href="./t2-html-css-dom-p2.html">T2-HTML-CSS-DOM-P2</a>
-                <a class="button" href="./t3-design-to-web-blog.html">T3-WEB-BLOG</a>
-                <a class="button button-primary" href="./t4-javascript-basics.html">T4-JavaScript-B</a>
-                <a class="button" href="./t5-problem-solving.html">T5-PROBLEM-SOLVING</a>
-                <hr>
-                <section class="textarea">
-                    <div id="t2htmlp1">
-                        <h1 class="blogpicktitle">T2-HTML-CSS-DOM-P1</h1>
-                        <h3>Can you think of an analogy to describe HTML, 
-                            CSS and the DOM? How would you describe it to your non-technical friend?</h3>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Sungmi's Blog</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="../images/logo.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700|EB+Garamond:400,500,600,700" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" media="screen" href="../style/main.css" />
+    <script src="main.js"></script>
+</head>
+<body>
+    <!--navbar-->
+    <header class="navlist">
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="">About me</a></li>
+                <li><a href="./blog_template.html">Blogs</a></li>
+                <li><a href="">Projects</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- first container -->
+        <article id="top">
+            <ul class="blognav">
+                <li><a href="./cultural.html">Cultural Blogs</a></li>
+                <li><a href="">Technical Blogs</a></li>
+            </ul>
+            <div class="blogspace text-center">
+             <button type="button" class="btn"><a href="./t2-html-css-dom-p1.html">T2-html,CSS&DOM</a></button>
+             <button type="button" class="btn"><a href="./t2-html-css-dom-p2.html">T2-html,CSS&DOM 2</a></button>
+             <button type="button" class="btn"><a href="./t3-design-to-web-blog.html">T3-Design to web blog</a></button>
+             <button type="button" class="btn"><a href="./t4-javascript-basics.html">T4-Javascript basic</a></button>
+             <button type="button" class="btn"><a href="./t5-problem-solving.html">T5-Problem solving</a></button>
+             <h3 class="blog-h3title">html, CSS & DOM</h3>
+             <div class="pagetitle text-center"></div>
+            </div>
+            <article class="container-fluid text-center">
+                <div class="row rowmargin">
+                    <div class="textinblog">
+                        <h3>1. Can you think of an analogy to describe HTML, 
+                                CSS and the DOM? How would you describe it to your non-technical friend?</h3>
                         <p>
                             html is the language of the web and it's called a 'tag',basically
                             I can say it's basement for building the website.
@@ -59,8 +58,8 @@
                             you put it on some makeup to show users.
                         </p>
                     </div>
-                    <div>
-                        <h3>What is meant by boxifying design?</h3>
+                    <div class="textinblog">
+                        <h3>2. What is meant by boxifying design?</h3>
                         <p>
                             Webpage is built up with lots of boxes, we only can see image,
                             color and text but actually these contents are surrouned by each
@@ -69,9 +68,9 @@
                             html,css and JavaScript.
                         </p>
                     </div>
-                    <div>
-                        <h3>What is the box model?</h3>
-                        <img src="../images/boxing-model.png" alt="boxingmodel" class="boxmodel">
+                    <div class="textinblog">
+                        <h3>3. What is the box model?</h3>
+                        <img src="../images/boxing-model.png" alt="boxingmodel" class="boxmodel img-responsive">
                         <p>
                             The box model is the important to understand html,
                             when we write down tag 'p' it's in a box. So P is tag 
@@ -81,37 +80,16 @@
                             of the box.
                         </p>
                     </div>
-                    <div><a class="bottomnav" href="#top">Top</a></div>
-                
+                    <div class="blogspace"><a href="#top">Top</a></div>
+                </div>
+            </article>
+    </main>
 
-                </section>
-
-
-
-              </main>
-            </section>
-     <!-- Footer -->
-     <footer>
-            <p>&copy;Sungmi Kim 2018</p>
-        </footer>
-
-        <!-- Js -->
- 
-        <script>
-         var dropdown = document.getElementsByClassName("dropdown-btn");
-         var i;
- 
-         for (i = 0; i < dropdown.length; i++) {
-             dropdown[i].addEventListener("click", function() {
-                 this.classList.toggle("active");
-                 var dropdownContent = this.nextElementSibling;
-                 if (dropdownContent.style.display === "block") {
-                     dropdownContent.style.display = "none";
-                 } else {
-                   dropdownContent.style.display = "block";
-                 }
-                });
-            }
-        </script>
-    </body>
+    <footer class="container-fluid">
+        <ul class="linkicon">
+            <li><a class="github githubicon" href="https://github.com/Sungmiii?tab=repositories" target="_blank"></a></li>
+        </ul>
+        <p class="copyright">© Sungmi Kim. All rights reserved.  | christyksmile@gmail.com</p>
+    </footer>
+</body>
 </html>

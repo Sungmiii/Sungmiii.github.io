@@ -1,89 +1,143 @@
-/*=====
-body all style
-=====
-*/
-
-body,footer {
-    font: 300 16px/22px "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+/* *{
+box-sizing: border-box;
+border: 1px solid red;
+} */
+body,html {
+    font-family: 'Roboto', sans-serif;
 }
-/* =======
-navigation style
-========
-*/
 
-.navcontainer {
-    background: linear-gradient(to bottom, #a1d3b0, #f6f1d3);
-    height: 100%;
-    width: 200px;
+.container-fluid {
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+/* nav list*/
+.navlist {
     position: fixed;
-    z-index: 1;
-    top: 0;
+    top:0;
+    right: 0;
     left: 0;
-    overflow-x: hidden;
-    padding-top: 20px;
+    z-index: 1;
+    
 }
-.navigation {
-    margin: 50px 30px 0 50px;   
+nav ul {
+    text-align: right;
+    background: white;
 }
-.logo {
-    margin: 30px 5px;
+nav li > a {
+  position: relative;
+  text-decoration: none;
+  color: black;
 }
- 
-.navigation li, a, .dropdown-btn {
+nav li > a:hover {
+    color: #ffa647;
     text-decoration: none;
-    font-size: 20px;
-    color: white;
-    display: block;
-    border: none;
-    background: none;
+}
+nav li > a:before {
+    content: "";
+    position: absolute;
     width: 100%;
+    height: 2px;
+    bottom: -5px;
+    left: 0;
+    background-color: #ffa647;
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+nav li >a:hover:before {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+.navlist li {
+list-style: none;
+display: inline-block;
+padding:2%;
+margin-left:1%;
+font-weight: 700;
+}
+
+/*main*/
+main {
+    margin: 8%;
+    height: 100%;
+    /* box-sizing: border-box;
+    border:1px solid pink; */
+}
+.main-h3title, .blog-h3title {
+  font-family: 'EB Garamond', serif;
+  font-size: 40px;
+  font-weight: 300;
+  text-align: center;
+}
+.editimage {
+    margin-top:5%;
+}
+.blog-margin {
+    margin: 10px auto 20px auto;
+    
+}
+.blog-h3title {
+    margin-top:40px;
+    margin-bottom: 30px;
+}
+.mainBlog {
+    margin-bottom:30px;
+}
+/*footer*/
+footer {
+    text-align: center;
+}
+.linkicon li {
+    list-style: none;
+}
+.githubicon:before{
+    content: url("../images/github32.png");
+}
+
+/*in the blog*/
+
+.blogspace {
+    padding-top: 10px;
+    padding-bottom:10px;
+}
+.blogspace a {
+    text-decoration: none;
+    color:black;
+}
+.blogspace a:hover{
+    text-decoration: none;
+    color:#668fd1;
+}
+.blognav {
+    text-align: center;
+    background-color: antiquewhite;
+    padding: 2% 0;
+}
+.blognav li{
+    display: inline-block;
+    font-size: 14px;
+    margin-right: 5%;
+}
+.blognav a {
+    color:gray;
+    font-weight: 500;
+    text-decoration: none;
+}
+.blognav a:hover {
+    color: #ffa647;
+}
+.textinblog {
     text-align: left;
-    cursor: pointer;
-    outline: none;
-    list-style-type: none;
+    padding: 2% 20%;
 }
-.dropdown-btn {
-    font-weight: 350;
-    padding: 0 0;
-    margin-top: 0;
-    margin-bottom: 3px;
-    text-transform: inherit;
+.pagetitle {
+    width: 100px;
+    margin: 0 auto;
+    border-bottom: 2px solid black;
 }
-.dropdown-list {
-    padding: 0;
-    margin: 0;
-}
-.dropdown-container .dropdown-list li a {
-    width: 150px;  
-    font-size: .8em;
-}
-
-/* on mouse-over */
-.navigation a:hover, .dropdown-btn:hover {
-    color: skyblue;
-}
-button:focus {
-    color: white;
-}
-.active {
-    background-color: none;
-    color: white;
-}
-.dropdown-container {
-    display: none;
-    background-color: none;
-}
-.fa-caret-down {
-    float: right;
-    padding-top: 8px;
-    padding-left: 20px;
-}
-/*
-======
-lead
-=====
-*/
-
 
 /*
 ====
@@ -93,128 +147,3 @@ t4 span
 .t4span {
     background-color: aquamarine;
 }
-
-/*
-=====
-main content
-=====
-*/
-
-main h1 {
-    text-align: right;
-    font-weight: 500;
-}
-.maincontatiner {
-    margin: 100px 100px 0 300px;
-}
-.maincontatiner p {
-    padding: 10px;
-}
-#mydog {
-    width: 75%;
-}
-
-
-/*
-=====
-footer
-=====
-*/
- 
-footer {
-    clear: both;
-    margin-left: 300px;
-    height: 150px;
-}
-
-footer p {
-    margin-top: 100px;
-}
-
-/* 
-======
-blog template
-=====
-*/
-.dogblog1 {
-    width: 100%;
-}
-.blogpicktitle {
-    text-align: left;
-}
-
-.button {
-    text-transform: inherit;
-    width:200px;
-}
-
-.textarea {
-    max-width: 750px;
-}
-
-.boxmodel {
-    max-width: 400px;
-}
-
-.bottomnav {
-    color: black;
-}
-
-/*
-====
-resposive
-====
-*/
-
-@media only screen and (max-width:400px) {
-    .navcontainer {
-        background: linear-gradient(to bottom, #a1d3b0, #f6f1d3);
-        height: auto;
-        width: 100%;
-    }
-    .navigation {
-        margin: 10px 30px 0 50px;   
-    }
-    .navigation a, .dropdown-btn {
-        color: black;
-    }
-    button:focus {
-        color: black;
-    }
-    .logo {
-        margin: 10px 0 10px 220px;
-        position: fixed;
-    }
-    #mylogo {
-        width: 75px;
-    }
-    .maincontatiner {
-        margin: 250px 10px 10px 10px;
-        position: relative;
-    }
-    .fa-caret-down {
-        float: right;
-        padding-top: 8px;
-        padding-right: 200px;
-    }
-    #mydog {
-        width: 100%;
-    }
-
-    .button {
-        text-transform: inherit;
-        margin: 5px 50px;
-        width: 250px;
-        height: auto;
-        font-size: 15px;
-    }
-
-    footer {
-        clear: both;
-        margin-left: 10px;
-        width: 100%;
-        height: 150px;
-    }
-}
-
-/* check */

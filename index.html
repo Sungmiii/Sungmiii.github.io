@@ -1,87 +1,82 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Sungmi Kim</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato:100,300,400">
-        <link rel="stylesheet" text="type/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.css">
-        <link rel="stylesheet" text="type/css" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css">
-        <link rel="stylesheet" text="type/css" href="style/main.css">
-        <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
-    </head>
-    <body>
-
-       <!--Navigation bar-->
-       <section class="navcontainer">
-       <nav class="navigation">
-           <ul>
-               <li class="logo"><a href="index.html"><img src="images/logo.png" alt="sungmi logo" id="mylogo"></a></li>
-               <li><a href="#">About Me</a></li>
-               <button class="dropdown-btn">Blog
-                   <i class="fa fa-caret-down"></i>
-               </button>
-                 <div class="dropdown-container">
-                     <ul class="dropdown-list">
-                      <li><a href="blog/blog-template.html">Cultural Blogs</a></li>
-                      <li><a href="blog/blog2-template.html">Technical Blogs</a></li>
-                    </ul>
-                 </div>
-               <li><a href="#">Project</a></li>
-               <li><a href="#">Contact</a></li>
-           </ul>
-       </nav>
-       </section>
-       <!-- Main content-->
-       <section class="maincontatiner">
-           <main>
-            
-             <div class="row">
-                <div class="five columns">
-                    <h1>Hi Im Sungmi</h1>
-                    <p>
-                       I am living in Wellington since 2011, have worked as 
-                       a barista but I don't drink coffee haha! I have a 
-                       dog which foxterrior crossed chihuahua, he looks 
-                       like a chihuahua but his energy is like a giant dog. 
-                        
-                    </p>
-                    <p>
-                        I wish to be a UX/UI designer and a front-end developer
-                        after finishing the bootcamp. Coding is quite tough one
-                         for me so far, I enojoyed some time and hated a lot some 
-                         other time.
-                     </p>
-                </div>
-                <div class="seven columns"><img id ="mydog" src="images/sci25.jpg" alt="brwon and white color chihuahua crossed dog"></div>
-             </div>
-           </main>
-
-       </section>
-       <!-- Footer -->
-       <footer>
-           <p>&copy;Sungmi Kim 2018</p>
-       </footer>
-
-       <!-- Js -->
-
-       <script>
-        var dropdown = document.getElementsByClassName("dropdown-btn");
-        var i;
-
-        for (i = 0; i < dropdown.length; i++) {
-            dropdown[i].addEventListener("click", function() {
-                this.classList.toggle("active");
-                var dropdownContent = this.nextElementSibling;
-                if (dropdownContent.style.display === "block") {
-                    dropdownContent.style.display = "none";
-                } else {
-                  dropdownContent.style.display = "block";
-                }
-               });
-           }
-       </script>
-    </body>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Sungmi's Blog</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="images/logo.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700|EB+Garamond:400,500,600,700" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" media="screen" href="style/main.css" />
+    <script src="main.js"></script>
+</head>
+<body>
+    <header class="navlist">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="">About me</a></li>
+                <li><a href="./blog/blog_template.html">Blogs</a></li>
+                <li><a href="">Projects</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- first container -->
+        <article>
+            <div class="container-fluid bg-1 text-center">
+             <h3 class="main-h3title">hi I'm Sungmi, design & build a website.</h3>
+             
+             <img src="./images/sungmikimphoto.jpg" class="img-responsive editimage" style="display:inline" alt="sungmiphoto" width="350" height="350">
+            </div>
+        </article>
+        <!-- 2nd containter grid -->
+        <article>
+        <div class="container-fluid bg-3 text-center">    
+          <div class="row">
+            <div class="col-sm-4">
+            <h3 class="blog-h3title">Technical Blog</h3>
+            <img src="./images/technicblog@2x.png" class="img-responsive blog-margin" style="width:20%" alt="technicalicon">
+            <p class="mainBlog">
+                Hi all, this blog is uploaded for my EDA technical process,
+                but I am not good at writing in English. I am trying to best to explain
+                what I have learnt from Phase0.
+            </p>
+            <button type="button" class="btn btn-default"><a href="./blog/technical.html">Go to page</a></button>
+            </div>
+            <div class="col-sm-4"> 
+            <h3 class="blog-h3title">Cultural Blog</h3>
+            <img src="./images/cultural@2x.png" class="img-responsive blog-margin" style="width:20%" alt="technicalicon">
+            <p class="mainBlog">
+                Hi all, this blog is uploaded for my EDA cultural process from book "Search_Inside_Yourself",
+                but I am not good at writing in English. I am trying to best to explain
+                what I have learnt from this book.
+            </p>
+            <button type="button" class="btn btn-default"><a href="./blog/cultural.html">Go to page</a></button>
+            </div>
+            <div class="col-sm-4"> 
+            <h3 class="blog-h3title">Projects</h3>
+            <img src="./images/technicblog@2x.png" class="img-responsive blog-margin" style="width:20%" alt="technicalicon">
+            <p class="mainBlog">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod 
+                tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+            <button type="button" class="btn btn-default">Go to page</button>
+            </div>
+          </div>
+        </div>
+        </article>
+    
+    </main>
+    
+    <footer class="container-fluid">
+        <ul class="linkicon">
+            <li><a class="github githubicon" href="https://github.com/Sungmiii?tab=repositories" target="_blank"></a></li>
+        </ul>
+        <p class="copyright">© Sungmi Kim. All rights reserved.  | christyksmile@gmail.com</p>
+    </footer>
+</body>
 </html>
