@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Minesweeper</title>
+    <link rel="stylesheet" href="minesweeper.css">
+    <link rel="shortcut icon" href="images/mydog.ico" type="image/x-icon">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="lib/tests.js"></script>
+    <script src="lib/lib.js"></script>
+    <script src="minesweeper.js"></script>
+  </head>
+  <body>
+    <audio id="music" src="audio/small-dog-barking_daniel-simion.mp3" autoplay>
+      <!-- <source src="audio/small-dog-barking_daniel-simion.mp3" type="audio/mpeg"> -->
+    </audio>
+    <div id="message"></div>
+    <div id="notes"></div>
+    <div class="board" id="game"></div>
+    <input type="button" onclick="resetfunction()" id="reset" value="Play again">
+  </body>
+</html>
