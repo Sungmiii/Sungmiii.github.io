@@ -147,3 +147,26 @@ t4 span
 .t4span {
     background-color: aquamarine;
 }
+
+/*
+t6
+*/
+.parentheses {
+    background-color: aquamarine;
+    
+}
+
+.brackets {
+    background-color: peachpuff;
+}
+
+.brace {
+    background-color: yellowgreen;
+}
+
+.single {
+    background-color: tan;
+}
+.double {
+    background-color: powderblue;
+}
