@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Sungmi's Blog</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="../images/logo.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700|EB+Garamond:400,500,600,700" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" media="screen" href="../style/main.css" />
+    <script src="main.js"></script>
+</head>
+<body>
+    <!--navbar-->
+    <header class="navlist">
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="">About me</a></li>
+                <li><a href="./blog_template.html">Blogs</a></li>
+                <li><a href="../project/project.html">Projects</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- first container -->
+        <article id="top">
+            <ul class="blognav">
+                <li><a href="./cultural.html">Cultural Blogs</a></li>
+                <li><a href="">Technical Blogs</a></li>
+            </ul>
+            <div class="blogspace text-center">
+             <button type="button" class="btn"><a href="./t2-html-css-dom-p1.html">T2-html,CSS&DOM 1</a></button>
+             <button type="button" class="btn"><a href="./t2-html-css-dom-p2.html">T2-html,CSS&DOM 2</a></button>
+             <button type="button" class="btn"><a href="./t3-design-to-web-blog.html">T3-Design to web blog</a></button>
+             <button type="button" class="btn"><a href="./t4-javascript-basics.html">T4-Javascript basic</a></button>
+             <button type="button" class="btn"><a href="./t5-problem-solving.html">T5-Problem solving</a></button>
+             <button type="button" class="btn"><a href="./t6-js-language.html">T6-JS language</a></button>
+             <h3 class="blog-h3title">JavsScript language</h3>
+             <div class="pagetitle text-center"></div>
+            </div>
+            <article class="container-fluid text-center">
+                <div class="row rowmargin">
+                    <div class="textinblog">
+                        <h3>1. What is parentheses <span class="parentheses">()</span> doing for in JavsScript?</h3>
+                        <p>
+                           You are able to see lots of <span class="parentheses">()</span> in JavsScript code,
+                           and there is curiosity that what are they doing for?
+                           In <span class="parentheses">Function</span> it's used for excuting the function code.
+                           If you read my JavaScript-basic blog there is example of how to use the function and you don't want 
+                           to reapeat this function code at all the time just simply you can call yourfunction with <span class="parentheses">()</span>.
+                           <br>
+                           You also use <span class="parentheses">()</span> for the condititonal statement and the looping statement.
+                           In this time you add content in the <span class="parentheses">()</span>, for example if you want to give a condtion, you write down
+                           your condition inside of <span class="parentheses">()</span> after if.
+                        </p>
+                    </div>
+                    <div class="textinblog">
+                        <h3>2. What is brackets <span class="brackets">[]</span> doing for in JavsScript?</h3>
+                        <p>
+                          We are using the bracktets for array, what is array? Array is the list basket if I say simly explaining.
+                          For examply, I need list for my favorite movie then I could make <span class="brackets">movieList = ['Harry Potter', 'Inception', 'Iron man-1']</span>.
+                          Also if you want to select one movie from my list, using <span class="brackets">[]</span>. 
+                          Wait, How? Array has a index property, so my movie list has a index number each 'Harry Potter' has index 0,
+                          'Inception' has index 1 and 'Ironman-1' has index 2. Yes, it starts from 0, please don't confuse with the length. 
+                          So we could select 'Harry Potter' with <span class="brackets">movieList[0]</span>
+                        </p>
+                    </div>
+                    <div class="textinblog">
+                        <h3>3. What is brace <span class="brace">{}</span> doing for in JavsScript?</h3>
+                        <p>
+                            We are using brace for Object and enclose blocks of code(function,loop,condition etc),
+                            I am talking about the object mainly because it's very important to use the object in JavsScript.
+                            When I mentioned about my movieList there is characters in the movie, right? So I want to make a list 
+                            each my favorite movie this time I am using <span class="brace">{}</span>. 
+                            <span class="brace">chracterList = {"Harry Potter":{"Name":"Harry Potter", "Role":"Main Character", "Actor":"Daniel Radcliffe"},
+                            "Iron man-1":{"Name":"Tony Stark", "Role":"Main Character", "Actor":"Robert Downey, Jr."}}</span> like this. 
+                            Yes, You can add object in object even you can add array in object, very cool and confusing haha!
+                            How can you select 'Actor's name? It's simply we are using <span class="brackets">[]</span> and dot.
+                            So We could select <span class="brackets">chracterList["Harry Potter"].Actor</span> or you can use <span class="brackets">[Actor]</span> as well.
+                        
+                        </p>
+                       
+                    </div>
+                    <div class="textinblog">
+                        <h3>4. What is single quotes <span class="single">' '</span> & double quotes <span class="double">" "</span> doing for in JavsScript?</h3>
+                        <p>
+                            We use the single quotes for stiring(text), you see the above I wrote the Harry Potter with <span class="single">' '</span> in array list.
+                            Also you can see I used <span class="double">" "</span> as well, you are able to use both for string. But how about 
+                            you want to change your text in a new line also js.file read your <span class="single">' '</span> as a code but you only use for like [he's].
+                            That time we use  <span class="single">' '</span>, for example <span class="single">'A string that\'s single quoted'</span> slash is saying to 
+                            our computer "hey this single quote is not for string another string".
+                            
+                        </p>
+                    </div>
+                    <div class="blogspace"><a href="#top">Top</a></div>
+                </div>
+            </article>
+    </main>
+
+    <footer class="container-fluid">
+        <ul class="linkicon">
+            <li><a class="github githubicon" href="https://github.com/Sungmiii?tab=repositories" target="_blank"></a></li>
+        </ul>
+        <p class="copyright">© Sungmi Kim. All rights reserved.  | christyksmile@gmail.com</p>
+    </footer>
+</body>
+</html>
