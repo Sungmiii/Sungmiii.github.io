@@ -60,5 +60,28 @@ div.marked, div.marked:hover {
 }
 
 #reset {
- margin-top: 30px;
+ margin: 30px 35%;
 }
+
+
+[type='button']{
+  background: whitesmoke;
+  border: none;
+  padding: 15px 32px;
+  color: grey;
+  font-size: 15px;
+  box-shadow: 2px 2px 2px gray;
+}
+
+[type='button']:hover {
+  color: white;
+  animation-name: button-color;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+@keyframes button-color{
+  100%{
+    background-color: #ffa647;
+  }
+}
+
