@@ -17,11 +17,12 @@ body,html {
     right: 0;
     left: 0;
     z-index: 1;
+    background: white;
+    box-shadow: 1px 1px 1px rgb(237, 238, 239);
     
 }
 nav ul {
     text-align: right;
-    background: white;
 }
 nav li > a {
   position: relative;
@@ -111,10 +112,20 @@ footer {
     text-decoration: none;
     color:#668fd1;
 }
+.blognavcategory {
+    margin-top: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
 .blognav {
     text-align: center;
     background-color: antiquewhite;
-    padding: 2% 0;
+   
+}
+.blognav ul {
+    display: block;
+    margin-top: 0;
+    padding: 0;
 }
 .blognav li{
     display: inline-block;
