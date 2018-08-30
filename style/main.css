@@ -96,6 +96,7 @@ footer {
 }
 .githubicon:before{
     content: url("../images/github32.png");
+    margin: 0 auto;
 }
 
 /*in the blog*/
@@ -183,3 +184,20 @@ t6
 }
 
 
+/* 
+game
+*/
+.game {
+    margin-top: 30px;
+}
+
+/* media responsive*/
+@media (max-width:575.98px){
+    nav li > a:before {
+        bottom: -20px; 
+    } 
+
+.blognav{
+    margin-top: 50px;
+}
+}
