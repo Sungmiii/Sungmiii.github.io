@@ -1,0 +1,46 @@
+main {
+    padding-top: 2em;
+}
+header > h1,p {
+    text-align: center;
+}
+.imgarea {
+    width: 300px;
+    height: 300px;
+    background-color: gray;
+    margin: 20px auto;
+}
+#randombtn{
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+[type='button']{
+    background: whitesmoke;
+    border: none;
+    padding: 15px 32px;
+    color: grey;
+    font-size: 15px;
+    box-shadow: 2px 2px 2px gray;
+  }
+  
+  [type='button']:hover {
+    color: white;
+    animation-name: button-color;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+  }
+  @keyframes button-color{
+    100%{
+      background-color: #1c87b5;
+    }
+  }
+
+
+.devilfruit{
+  display: none;
+  margin-right: auto;
+  margin-left: auto;
+}
+
