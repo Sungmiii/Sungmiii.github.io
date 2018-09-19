@@ -5,10 +5,6 @@
     <link rel="stylesheet" href="devilfruit.css">
     <link rel="stylesheet" href="../../style/main.css">
     <link rel="shortcut icon" href="sprint9img/lgo.ico" type="image/x-icon">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-    <script src="lib/tests.js"></script>
-    <script src="lib/lib.js"></script>
-    <script src="minesweeper.js"></script>
   </head>
   <body>
     <!--navbar-->
@@ -25,23 +21,32 @@
    <main>
       <header>
           <h1>Devil Fruit</h1>
-          <p>Find out your devil fruit</p>
+          <p>This game is based on Japanese Animation 'Onepiece',
+              <br>
+              basically if you eat the devil fruit you will get the power.
+              <br>
+          </p>
+          <h3>Please find out which power will you get it...</h3>
       </header>
       <section class ="fruitimg">
           <div class="imgarea">
-              <img id="imagepick" class="devilfruit ito" src="./sprint9img/Ito_Ito_no_Mi_Infobox.png" alt="" >
-              <img id="imagepick" class="devilfruit mera" src="./sprint9img/Mera_Mera_no_Mi_Infobox.png" alt="" >
-              <img id="imagepick" class="devilfruit ope" src="./sprint9img/Ope_Ope_no_Mi_Infobox.png" alt="">
-              <img id="imagepick" class="devilfruit sara" src="./sprint9img/Sara_Sara_no_Mi,_Model_Axolotl_Infobox.png" alt="">
-              <img id="imagepick" class="devilfruit arttidevilfruti" src="./sprint9img/Artificial_Devil_Fruit_Infobox.png" alt="">
-              <img id="imagepick" class="devilfruit awa" src="./sprint9img/Awa_Awa_no_Mi_Infobox.png" alt="">
-              <img id="imagepick" class="devilfruit bara" src="./sprint9img/Bara_Bara_no_Mi_Infobox.png" alt="">
-              <img id="imagepick" class="devilfruit batto" src="./sprint9img/Batto_Batto_no_Mi,_Model_Vampire_Infobox.png" alt="">
-              <img id="imagepick" class="devilfruit gol" src="./sprint9img/Gol_Gol_no_Mi_Infobox.png" alt="">
-              <img id="imagepick" class="devilfruit gomu" src="./sprint9img/Gomu_Gomu_no_Mi_Infobox.png" alt="">
+              <img class="devilfruit ito" src="./sprint9img/Ito_Ito_no_Mi_Infobox.png" alt="" >
+              <img class="devilfruit mera" src="./sprint9img/Mera_Mera_no_Mi_Infobox.png" alt="" >
+              <img class="devilfruit ope" src="./sprint9img/Ope_Ope_no_Mi_Infobox.png" alt="">
+              <img class="devilfruit sara" src="./sprint9img/Sara_Sara_no_Mi,_Model_Axolotl_Infobox.png" alt="">
+              <img class="devilfruit arttidevilfruti" src="./sprint9img/Artificial_Devil_Fruit_Infobox.png" alt="">
+              <img class="devilfruit awa" src="./sprint9img/Awa_Awa_no_Mi_Infobox.png" alt="">
+              <img class="devilfruit bara" src="./sprint9img/Bara_Bara_no_Mi_Infobox.png" alt="">
+              <img class="devilfruit batto" src="./sprint9img/Batto_Batto_no_Mi,_Model_Vampire_Infobox.png" alt="">
+              <img class="devilfruit gol" src="./sprint9img/Gol_Gol_no_Mi_Infobox.png" alt="">
+              <img class="devilfruit gomu" src="./sprint9img/Gomu_Gomu_no_Mi_Infobox.png" alt="">
           </div>
-         <input id ="randombtn" type="button" value="Findout">
-         <p id="fruitInfo"></p>
+          <div class="btnarea"> 
+            <input id ="randombtn" type="button" value="Findout">
+            <input id ="replaybtn" type="button" value="Again">
+          </div>
+
+         <div id="fruitInfo"></div>
       </section>
    </main>
     <footer class="container-fluid">

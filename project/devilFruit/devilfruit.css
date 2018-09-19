@@ -1,8 +1,27 @@
 main {
     padding-top: 2em;
 }
-header > h1,p {
+header > p,h1,h3, section p{
     text-align: center;
+}
+
+section h3 {
+  background: #63bbe1;
+  color: aliceblue;
+  display: block;
+  width: 500px;
+  margin: 2em auto 0 auto;
+  padding: 10px;
+}
+section p{
+
+  background: #63bbe1;
+  color: aliceblue;
+  display: block;
+  width: 500px;
+  margin: 0 auto;
+  padding: 10px;
+
 }
 .imgarea {
     width: 300px;
@@ -10,10 +29,11 @@ header > h1,p {
     background-color: white;
     margin: 20px auto;
 }
-#randombtn{
-  display: block;
-  margin-right: auto;
-  margin-left: auto;
+.btnarea{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 5px;
 }
 
 [type='button']{
@@ -35,12 +55,14 @@ header > h1,p {
     100%{
       background-color: #1c87b5;
     }
-  }
-
-
+}
 .devilfruit{
   display: none;
   width: 100%;
   max-height: 300px;
 }
-
+@media screen and(max-width:500px){
+  .btnarea{
+    margin: 0 auto;
+  }
+}
