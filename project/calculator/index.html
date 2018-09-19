@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-eqbutton="X-UA-Compatible" content="IE=edge">
+    <title>Sungmi Calculator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" media="screen" href="../js-calculator/main.css" />
+    <link rel="stylesheet" href="../../style/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa:300,400,700|Pacifico" rel="stylesheet">
+</head>
+<body>
+    <nav class="navlist">
+                <nav>
+                    <ul>
+                        <li><a href="../../index.html">Home</a></li>
+                        <li><a href="">About me</a></li>
+                        <li><a href="../../blog/blog_template.html">Blogs</a></li>
+                        <li><a href="../project.html">Projects</a></li>
+                    </ul>
+                </nav>
+      </nav>
+<main>
+<section class="container" role="container">
+<header>
+    <h3 class="caltitle">Calculator</h3>
+    <h5>Sungmi</h5>
+    <input type="text" name="display" id="display" disabled>
+</header>
+<div class="row">
+    <button class="col" value="ac" id="clear">AC</button>
+    <button class="col" value="ce" id="remove">CE</button>
+    <button class="col" value="remainder" id="remainder">%</button>
+    <button class="col" value="divide" id="divide" onclick="insert('/')">÷</button>
+</div>
+<div class="row">
+    <button class="col" value="seven" id="seven" >7</button>
+    <button class="col" value="eight" id="eight" onclick="insert(8)">8</button>
+    <button class="col" value="nine" id="nine" onclick="insert(9)">9</button>
+    <button class="col" value="multiple" id="operator" onclick="insert('*')">x</button>
+</div>
+<div class="row">
+    <button class="col" value="four" id="four" onclick="insert(4)">4</button>
+    <button class="col" value="five" id="five" onclick="insert(5)">5</button>
+    <button class="col" value="six" id="six" onclick="insert(6)">6</button>
+    <button class="col" value="subtract" id="subtract" onclick="insert('-')">-</button>
+</div>
+<div class="row">
+    <button class="col" value="one" id="one" onclick="insert(1)">1</button>
+    <button class="col" value="two" id="two" onclick="insert(2)">2</button>
+    <button class="col" value="three" id="three" onclick="insert(3)">3</button>
+    <button class="col plus" value="add" id="add" onclick="insert('+')">+</button>
+</div>
+<div class="row bottom">
+    <button class="col" value="zero" id="zero" onclick="insert(0)">0</button>
+    <button class="col" value="dot" id="decimal" onclick="insert('.')">.</button>
+    <button class="col" value="equal" id="equal" onclick="total()">=</button>
+    <div class="col hide"></div>
+    
+</div>
+<div>
+    <p>it's not perfect yet... I am working on it</p>
+</div>
+</section>
+</main>
+<footer class="container-fluid">
+        <ul class="linkicon">
+            <li><a class="github githubicon" href="https://github.com/Sungmiii?tab=repositories" target="_blank"></a></li>
+        </ul>
+        <p class="copyright">© Sungmi Kim. All rights reserved.  | christyksmile@gmail.com</p>
+</footer>
+<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+<script src="../js-calculator/main.js"></script>
+</body>
+</html>
