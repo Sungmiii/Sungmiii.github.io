@@ -23,3 +23,5 @@ via phone without the main page because I forgot to add meta code ....
 
 
 ### Sprint 9
+
+I am having a git problem .. can't upload my calculator :sad:
