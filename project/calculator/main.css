@@ -1,8 +1,12 @@
 main {
     color: aliceblue;
+    margin: 8em auto !important;
 }
 main p{
     color: black;
+}
+section{
+    margin-top: 12em;
 }
 .caltitle{
     font-family: 'Pacifico', cursive;
