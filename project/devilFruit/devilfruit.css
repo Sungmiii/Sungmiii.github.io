@@ -1,11 +1,14 @@
-main {
-    padding-top: 2em;
+.devilmain {
+  padding-top: 2em;
 }
-header > p,h1,h3, section p{
-    text-align: center;
+.devilheader > p,
+h1,
+h3,
+.fruitimg p {
+  text-align: center;
 }
 
-section h3 {
+.fruitimg h3 {
   background: #63bbe1;
   color: aliceblue;
   display: block;
@@ -13,56 +16,66 @@ section h3 {
   margin: 2em auto 0 auto;
   padding: 10px;
 }
-section p{
-
+.fruitimg p {
   background: #63bbe1;
   color: aliceblue;
   display: block;
   width: 500px;
   margin: 0 auto;
   padding: 10px;
-
 }
 .imgarea {
-    width: 300px;
-    height: 300px;
-    background-color: white;
-    margin: 20px auto;
+  width: 300px;
+  height: 300px;
+  background-color: white;
+  margin: 20px auto;
 }
-.btnarea{
+.btnarea {
   display: flex;
   flex-direction: row;
   justify-content: center;
   padding: 5px;
 }
 
-[type='button']{
-    background: whitesmoke;
-    border: none;
-    padding: 15px 32px;
-    color: grey;
-    font-size: 15px;
-    box-shadow: 2px 2px 2px gray;
-  }
-  
-  [type='button']:hover {
-    color: white;
-    animation-name: button-color;
-    animation-duration: 1s;
-    animation-fill-mode: forwards;
-  }
-  @keyframes button-color{
-    100%{
-      background-color: #1c87b5;
-    }
+[type="button"] {
+  background: whitesmoke;
+  border: none;
+  padding: 15px 32px;
+  color: grey;
+  font-size: 15px;
+  box-shadow: 2px 2px 2px gray;
 }
-.devilfruit{
+
+[type="button"]:hover {
+  color: white;
+  animation-name: button-color;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+@keyframes button-color {
+  100% {
+    background-color: #1c87b5;
+  }
+}
+.devilfruit {
   display: none;
   width: 100%;
   max-height: 300px;
 }
-@media screen and(max-width:500px){
-  .btnarea{
+@media screen and(max-width:500px) {
+  .btnarea {
     margin: 0 auto;
+  }
+}
+
+#fruitInfo p,
+#fruitInfo h3 {
+  width: 100%;
+}
+
+@media (min-width: 1200px) {
+  #fruitInfo p,
+  #fruitInfo h3 {
+    width: 550px;
   }
 }

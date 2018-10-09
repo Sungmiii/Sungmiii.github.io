@@ -1,16 +1,12 @@
-html, body {
-  height: 100%;
-  font-family: 'Open Sans', sans-serif
-}
-
-body {
+/* body {
   display: flex;
   align-items: center;
   justify-content: flex-center;
   flex-direction: column;
-}
+} */
 
-#message, #notes {
+#message,
+#notes {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -43,7 +39,8 @@ body {
   background-color: white;
 }
 
-div.mine, div.mine:hover {
+div.mine,
+div.mine:hover {
   background: no-repeat center/60% url("images/mydog.png") sandybrown;
 }
 
@@ -55,16 +52,16 @@ div.hidden:hover {
   background: #ccc;
 }
 
-div.marked, div.marked:hover {
+div.marked,
+div.marked:hover {
   background: no-repeat center/60% url("images/mark.svg") deepskyblue;
 }
 
 #reset {
- margin: 30px 35%;
+  margin: 30px 35%;
 }
 
-
-[type='button']{
+[type="button"] {
   background: whitesmoke;
   border: none;
   padding: 15px 32px;
@@ -73,15 +70,14 @@ div.marked, div.marked:hover {
   box-shadow: 2px 2px 2px gray;
 }
 
-[type='button']:hover {
+[type="button"]:hover {
   color: white;
   animation-name: button-color;
   animation-duration: 1s;
   animation-fill-mode: forwards;
 }
-@keyframes button-color{
-  100%{
+@keyframes button-color {
+  100% {
     background-color: #ffa647;
   }
 }
-

@@ -1,80 +1,78 @@
-main {
-    color: aliceblue;
-    margin: 8em auto !important;
+.calmain {
+  color: aliceblue;
+  margin: 8em auto !important;
 }
-main p{
-    color: black;
+.calmain p {
+  color: black;
 }
-section{
-    margin-top: 12em;
+.container {
+  margin-top: 12em;
 }
-.caltitle{
-    font-family: 'Pacifico', cursive;
-    font-weight: 600;
+.caltitle {
+  font-weight: 700;
 }
 h5 {
-    font-weight: 300;
+  font-weight: 300;
 }
-.container{
-    width: 250px;
-    height: 335px;
-    background-color: rgb(167, 181, 204);
-    border-radius: 5px;
-    box-shadow: 3px 5px 1px gray;
-    margin-top: 30px;
-    padding: 25px
-    
-}
-
-header{
-    text-align: center;
-}
-input{
-    margin-bottom: 10px;
+.container {
+  width: 300px;
+  height: 500px;
+  background-color: rgb(167, 181, 204);
+  border-radius: 5px;
+  box-shadow: 3px 5px 1px gray;
+  margin-top: 30px;
+  padding: 25px;
 }
 
-input[type='text']{
-   background-color: rgb(171, 204, 188);
-   box-shadow: inset 0px -1px 5px;
-   font-size:2em;
-   width: 100%;
-   padding-right: 10px;
-   direction: rtl;
+.calheader {
+  text-align: center;
 }
-input[type='text']:focus{
-    outline: none;
+#display {
+  margin-bottom: 10px;
+}
+
+#display[type="text"] {
+  background-color: rgb(171, 204, 188);
+  box-shadow: inset 0px -1px 5px;
+  font-size: 2em;
+  width: 100%;
+  padding-right: 10px;
+  direction: rtl;
+}
+#display[type="text"]:focus {
+  outline: none;
 }
 /*button*/
-button{
-    width: 40px;
-    height: 30px;
-    border-radius: 50%;
+.calbutton {
+  width: 50px;
+  height: 30px;
+  border-radius: 75%;
 }
-button:focus{
-    outline: 0;
+.calbutton:focus {
+  outline: 0;
 }
-#clear{
-    background-color:  rgb(255, 124, 63);
-    color: aliceblue;
+#clear {
+  background-color: rgb(255, 124, 63);
+  color: aliceblue;
 }
-#remove{
-    background-color: rgb(226, 224, 149);
-    color: aliceblue;
+#remove {
+  background-color: rgb(226, 224, 149);
+  color: aliceblue;
 }
-#equal{
-    background-color: rgb(76, 106, 127);
-    color: aliceblue;
+#equal {
+  background-color: rgb(76, 106, 127);
+  color: aliceblue;
 }
-.plus{
-   height: 57px;
-   z-index: 1;
+.plus {
+  height: 57px;
+  z-index: 1;
 }
 .hide {
-    display: hidden;
+  display: hidden;
 }
 
 .bottom {
-    position: relative;
-    bottom:27px;
+  position: relative;
+  bottom: 27px;
+  right: 25px;
 }
-
