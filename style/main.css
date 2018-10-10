@@ -162,24 +162,31 @@ div.bloglist:nth-child(3) > img:nth-child(2) {
   width: 250px;
   height: 25vh;
 }
-.main button {
+.main .button {
   background-color: white;
-  margin-top: 1em;
+  margin: 1em auto;
   border: 1px solid black;
   font-size: 1rem;
+  width: 10vw;
   padding: 10px;
   cursor: pointer;
   text-decoration: none;
 }
-.main button a {
+
+@media (max-width: 500px) {
+  .main .button {
+    width: 50vw;
+  }
+}
+.main .button a {
   color: black;
 }
-.main button:hover,
-.main button:hover a {
+.main .button:hover,
+.main .button:hover a {
   color: white;
   border: none;
 }
-.main button:hover {
+.main .button:hover {
   animation-name: fillcolor;
   animation-duration: 1s;
   animation-fill-mode: forwards;
