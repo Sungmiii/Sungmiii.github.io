@@ -8,7 +8,7 @@
 }
 body {
   height: 100%;
-  font-family: "Niramit", Arial, Helvetica, sans-serif;
+  font-family: 'Niramit', Arial, Helvetica, sans-serif;
 }
 /* =====
 body grid
@@ -61,9 +61,16 @@ header
 /* name logo svg */
 
 .head {
+  z-index: 1;
+  background-color: white;
+  position: fixed;
+  height: 80px;
+  width: 100%;
+  top: 0;
+  transition: top 0.2 s ease-in-out;
   display: grid;
   padding: 1.5em;
-  font-family: "K2D", Arial, Helvetica, sans-serif;
+  font-family: 'K2D', Arial, Helvetica, sans-serif;
 }
 .navtitle {
   grid-column: col / span 2;
@@ -91,6 +98,10 @@ header
 }
 .navbar > ul:nth-child(1) > li:nth-child(1) {
   margin-left: 0;
+}
+
+.nav-up {
+  top: -40px;
 }
 /* ====
 main
